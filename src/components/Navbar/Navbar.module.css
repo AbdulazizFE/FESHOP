@@ -1,16 +1,23 @@
-.container{
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    font-weight: bold;
-    font-size: 22px;
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  color: initial;
 }
 
-.links{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: initial;
 }

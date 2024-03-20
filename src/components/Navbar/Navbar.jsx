@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <Link href="/" className={`${styles.logo}  ${LogoFont.className}`}>
-        LOREM
+        FESHOP
       </Link>
       <div className={styles.links}>
         <DarkModeToggle/>
