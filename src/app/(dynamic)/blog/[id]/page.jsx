@@ -26,11 +26,13 @@ export default async function Product({ params }) {
 
   return (
     <div className={styles.container}>
-      <Link href="/blog" className="btn btn-outline-info mb-5"> {`< Back`} </Link>
+      <Link href="/blog" className="btn btn-outline-info mb-5">
+        {" "}
+        {`< Back`}{" "}
+      </Link>
       <header className={styles.header}>
         <div className={styles.info}>
           <h1 className={styles.title}>{product.title}</h1>
-        
         </div>
         <div className={styles.imageContainer}>
           <Image
@@ -44,21 +46,23 @@ export default async function Product({ params }) {
         </div>
       </header>
 
-      <div className={styles.content}>
-        <div className={styles.gallery}>
-          {product.images.map((image) => (
-            <Image
-              key={product.id}
-              className={styles.image}
-              src={image}
-              alt={product.title}
-              width={200}
-              height={200}
-            />
-          ))}
-        </div>
-        <p className={styles.text}>{product.description}</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {product.images.map((image) => (
+          <div className="col h-100 w-50">
+            <div className="card h-100">
+              <Image
+                key={product.id}
+                className={styles.image}
+                src={image}
+                alt={product.title}
+                width={200}
+                height={200}
+              />
+            </div>
+          </div>
+        ))}
       </div>
+      <p className={styles.text}>{product.description}</p>
     </div>
   );
 }

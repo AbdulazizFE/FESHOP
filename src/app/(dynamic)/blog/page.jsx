@@ -27,8 +27,8 @@ export default async function Products() {
           className={styles.post}
           key={product.id}
         >
-          <div class="col h-100">
-            <div class="card h-100">
+          <div class="col h-100 ">
+            <div class="card h-100 bg-dark">
               <Image
                 className={styles.image}
                 src={product.thumbnail}
@@ -37,8 +37,8 @@ export default async function Products() {
                 alt={product.title}
               />
               <div class="card-body">
-                <h5 class="card-title">{product.title}</h5>
-                <p class="card-text">{product.description}</p>
+                <h5 class="card-title text-white">{product.title}</h5>
+                <p class="card-text text-white">{product.description}</p>
                 <span class={styles.price}>💰 {product.price}$</span>
               </div>
             </div>
