@@ -8,13 +8,13 @@ const LogoFont = Montserrat({ subsets: ["latin"], weight: ["400"] });
 export default function Navbar() {
   return (
     <div className={styles.container}>
-      <Link href="/" className={`${styles.logo}  ${LogoFont.className}`}>
+      <Link href="/" className={`${styles.logo}  ${LogoFont.className} btn  btn-outline-warning`}>
         FESHOP
       </Link>
       <div className={styles.links}>
         <DarkModeToggle/>
         {links.map((link) => (
-          <Link key={link.id} href={link.url} className={styles.link}>
+          <Link key={link.id} href={link.url} className="btn btn-outline-secondary">
             {link.title}
           </Link>
         ))}

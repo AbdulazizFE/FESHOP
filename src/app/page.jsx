@@ -1,6 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import Hero from "/public/images/icons/hero.svg";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Home() {
   return (
     <div className={styles.container}>

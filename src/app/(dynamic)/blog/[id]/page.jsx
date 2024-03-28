@@ -1,7 +1,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
-
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 async function getData(id) {
   const res = await fetch(`https://dummyjson.com/products/${id}`);
 
@@ -25,11 +26,11 @@ export default async function Product({ params }) {
 
   return (
     <div className={styles.container}>
-      <Link href="/blog"> {`<Back`} </Link>
+      <Link href="/blog" className="btn btn-outline-info mb-5"> {`< Back`} </Link>
       <header className={styles.header}>
         <div className={styles.info}>
           <h1 className={styles.title}>{product.title}</h1>
-          <p className={styles.desc}>Abbe</p>
+        
         </div>
         <div className={styles.imageContainer}>
           <Image

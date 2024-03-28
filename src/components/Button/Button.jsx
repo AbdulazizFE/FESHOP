@@ -4,7 +4,7 @@ import styles from "./Button.module.css";
 export default function Button() {
   return (
     <button
-      className={styles.logout}
+      className="btn btn-outline-success"
       onClick={() => {
         console.log("logout");
       }}

@@ -3,7 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
-
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 const inter = Inter({ subsets: ["latin"] });
 const lalezar = Lalezar({ subsets: ["arabic"], weight: ["400"] });
 export const metadata = {

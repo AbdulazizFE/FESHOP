@@ -7,8 +7,7 @@
 .logo {
   font-weight: bold;
   font-size: 22px;
-  text-decoration: none;
-  color: initial;
+
 }
 
 .links {
@@ -17,7 +16,3 @@
   align-items: center;
 }
 
-.link {
-  text-decoration: none;
-  color: initial;
-}
